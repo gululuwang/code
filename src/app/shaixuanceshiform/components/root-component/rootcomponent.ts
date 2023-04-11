@@ -14,9 +14,9 @@ import { FrameworkService } from '@gsp-sys/rtf-common';
 import { ApplicationParamService } from '@farris/command-services';
 import { EventDeclaration } from '../../events/event';
 import { FARRIS_DEVKIT_EXPRESSION_LISTENER_PROVIDERS, FARRIS_DEVKIT_EXPRESSION_EFFECTOR_PROVIDERS} from '@farris/devkit';
-// import { WFSubmiteService } from '@gsp-wf/rtdevkit';
+import { WFSubmiteService } from '@gsp-wf/rtdevkit';
 import { CloudprintService } from '@gsp-svc/cloudprint';
-// import { WFFlowchartService } from '@gsp-wf/ui-flowchart';
+import { WFFlowchartService } from '@gsp-wf/ui-flowchart';
 
 import { TranslateToken, FARRIS_DEVKIT_EXPRESSION_ROOT_FRAME_PROVIDERS } from '@farris/devkit';
 import { VerifyDetailService } from '@farris/ui-verify-detail';
@@ -74,9 +74,9 @@ import { ShaixuanceshiProxy } from '../../models/shaixuanceshiproxy';
         { provide: Declaration, useClass: EventDeclaration },
         { provide: TranslateToken, useExisting: LangService },
         VerifyDetailService,
-        // { provide: WFSubmiteService, useClass: WFSubmiteService },
+        { provide: WFSubmiteService, useClass: WFSubmiteService },
         { provide: CloudprintService, useClass: CloudprintService },
-        // { provide: WFFlowchartService, useClass: WFFlowchartService },
+        { provide: WFFlowchartService, useClass: WFFlowchartService },
         FARRIS_DEVKIT_EXPRESSION_LISTENER_PROVIDERS,
         FARRIS_DEVKIT_EXPRESSION_EFFECTOR_PROVIDERS,
         FARRIS_DEVKIT_EXPRESSION_ROOT_FRAME_PROVIDERS,

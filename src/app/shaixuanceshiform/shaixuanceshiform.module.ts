@@ -50,7 +50,7 @@ import { AngularDraggableModule } from '@farris/ui-draggable';
 import { SplitterModule } from '@farris/ui-splitter';
 import { ListNavModule } from '@farris/ui-list-nav';
 import { TextModule } from '@farris/ui-text';
-// import { WFRuntimeModule } from '@gsp-wf/rtdevkit'
+import { WFRuntimeModule } from '@gsp-wf/rtdevkit'
 import { MultiSelectModule } from '@farris/ui-multi-select';
 import { InputGroupModule } from '@farris/ui-input-group';
 import { ComboListModule } from '@farris/ui-combo-list';
@@ -63,7 +63,7 @@ import { ListFilterModule } from '@farris/ui-list-filter';
 import { SimpleFilterModule } from "@farris/ui-filter";
 import { AvatarModule } from '@farris/ui-avatar';
 import { CalendarModule } from '@farris/ui-calendar';
-// import { UiFlowchartModule } from '@gsp-wf/ui-flowchart';
+import { UiFlowchartModule } from '@gsp-wf/ui-flowchart';
 import { NumberSpinnerModule } from '@farris/ui-number-spinner';
 import { ComboLookupModule } from '@farris/ui-combo-lookup';
 import { ScrollspyModule } from '@farris/ui-scrollspy';
@@ -165,7 +165,7 @@ import { DataGridComponent } from './components/data-grid-component/datagridcomp
         SplitterModule,
         ListNavModule,
         TextModule,
-        // WFRuntimeModule,
+        WFRuntimeModule,
         MultiSelectModule,
         InputGroupModule,
         ComboListModule,
@@ -176,7 +176,7 @@ import { DataGridComponent } from './components/data-grid-component/datagridcomp
         ListFilterModule,
         SimpleFilterModule,
         AvatarModule,
-        // UiFlowchartModule,
+        UiFlowchartModule,
         CalendarModule,
         NumberSpinnerModule,
         ComboLookupModule,
@@ -202,7 +202,7 @@ import { DataGridComponent } from './components/data-grid-component/datagridcomp
         FEPageModalModule.forRoot(),
         FeatureEditorModule,
         FEScrollCollapsibleAreaModule,
-        // shaixuanceshiFormRoutingModule,
+        shaixuanceshiFormRoutingModule,
     ],
     providers: [
         { provide: LOCALE_ID, useValue: localStorage.getItem('languageCode') || 'zh-CHS' },
