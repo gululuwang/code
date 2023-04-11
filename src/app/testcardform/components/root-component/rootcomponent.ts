@@ -54,7 +54,7 @@ import { rootviewmodelopenHiddenHelp1Handler } from '../../viewmodels/handlers/r
 import { AttachmentEntityProxy } from '../../models/attachmententityproxy';
 
 @Component({
-    selector: 'app-rootcomponent',
+    selector: 'app-rootcomponent2',
     templateUrl: './rootcomponent.html',
     styleUrls: ['./rootcomponent.css'],
     providers: [

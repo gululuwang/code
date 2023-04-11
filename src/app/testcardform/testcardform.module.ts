@@ -94,7 +94,7 @@ export class JitMissingTranslationHandler implements MissingTranslationHandler {
 
 import { testCardFormRoutingModule } from './routing';
 
-import { CecepUiModule } from 'cecep-ui';
+// import { CecepUiModule } from 'cecep-ui';
 
 import { RootComponent } from './components/root-component/rootcomponent';
 
@@ -208,7 +208,7 @@ import { AttComponent } from './components/att-component/attcomponent';
         FeatureEditorModule,
         FEScrollCollapsibleAreaModule,
         testCardFormRoutingModule,
-        CecepUiModule,
+        // CecepUiModule,
     ],
     providers: [
         { provide: LOCALE_ID, useValue: localStorage.getItem('languageCode') || 'zh-CHS' },

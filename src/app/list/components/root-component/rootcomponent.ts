@@ -48,7 +48,7 @@ import { Remove1Handler } from '../../viewmodels/handlers/remove1handler';
 import { AttachmentEntityProxy } from '../../models/attachmententityproxy';
 
 @Component({
-    selector: 'app-rootcomponent',
+    selector: 'app-rootcomponent3',
     templateUrl: './rootcomponent.html',
     styleUrls: ['./rootcomponent.css'],
     providers: [
